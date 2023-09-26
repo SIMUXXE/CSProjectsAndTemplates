@@ -42,7 +42,7 @@ namespace UserLogin
         }
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            if (textBoxEmail.Text != null && textBoxNewUsername.Text != null && textBoxNewPassword.Text != null && textBoxRepeatPwd.Text != null)
+            if (textBoxEmail.Text != "" && textBoxNewUsername.Text != "" && textBoxNewPassword.Text != "" && textBoxRepeatPwd.Text != "")
             {   
                 if (passwordCheck(textBoxRepeatPwd.Text))
                 {
