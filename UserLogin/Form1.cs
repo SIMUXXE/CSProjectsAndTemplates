@@ -43,12 +43,12 @@ namespace UserLogin
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             if (textBoxEmail.Text != null && textBoxNewUsername.Text != null && textBoxNewPassword.Text != null && textBoxRepeatPwd.Text != null)
-            {
-                User a = new User();
-                a.Email = textBoxEmail.Text;
-                a.Username = textBoxNewUsername.Text;
+            {   
                 if (passwordCheck(textBoxRepeatPwd.Text))
                 {
+                    User a = new User();
+                    a.Email = textBoxEmail.Text;
+                    a.Username = textBoxNewUsername.Text;
                     a.Password = textBoxRepeatPwd.Text;
                     a.Id = Userlist.Count + 1;
                     Userlist.Add(a);
