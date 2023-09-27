@@ -132,8 +132,6 @@ namespace UserLogin
                         sublines = line.Split('#');
                         a.Id = Convert.ToInt32(sublines[1]);
                     }
-                    else if (line == "")
-                        break;
                     Userlist.Add(a);
                 }
             }
