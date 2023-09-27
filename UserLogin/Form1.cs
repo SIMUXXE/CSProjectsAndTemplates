@@ -109,7 +109,7 @@ namespace UserLogin
             {
                 string line;
                 string[] sublines = new string[2];
-                while ((line = inputFile.ReadLine()) != "---" && line!= "Database:")
+                while ((line = inputFile.ReadLine()) != "")
                 {
                     User a = new User();
                     if (line.Contains("email"))
